@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item [routerLink]="route.redirectTo" *ngFor="let route of routes" [detail]="true">
+      <ion-icon slot="start" [name]="route.icon" color="primary"></ion-icon>
+      {{route.name}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
