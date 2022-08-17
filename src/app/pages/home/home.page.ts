@@ -48,6 +48,11 @@ export class HomePage implements OnInit {
       name: 'Datetime',
       redirectTo: '/date-time',
     },
+    {
+      icon: 'car-outline',
+      name: 'Fab',
+      redirectTo: '/fab',
+    },
   ];
 
   constructor() {}
