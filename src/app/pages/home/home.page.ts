@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 interface Route {
   icon: string;
@@ -80,7 +81,11 @@ export class HomePage implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private menuController: MenuController) {}
 
   ngOnInit() {}
+
+  async showMenu() {
+    await this.menuController.toggle();
+  }
 }
