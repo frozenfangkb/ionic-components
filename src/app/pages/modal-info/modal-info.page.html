@@ -1,11 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Modal page</ion-title>
+    <ion-title>{{name}} from {{country}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
   <ion-button (click)="exitWithoutArguments()" expand="block">
-    Exit
+    Exit without arguments
+  </ion-button>
+  <ion-button (click)="exitWithArguments()" expand="block">
+    Exit with arguments
   </ion-button>
 </ion-content>
