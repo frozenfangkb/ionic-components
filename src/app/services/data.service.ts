@@ -4,6 +4,7 @@ import { User } from '../models/User';
 import { Observable } from 'rxjs';
 import { Route } from '../models/route';
 import { Album } from '../models/Album';
+import { Hero } from '../models/hero';
 
 @Injectable({
   providedIn: 'root',
@@ -23,5 +24,9 @@ export class DataService {
 
   getMenuOptions(): Observable<Route[]> {
     return this.http.get<Route[]>('/assets/data/menu-opts.json');
+  }
+
+  getHeroes(): Observable<Hero[]> {
+    return this.http.get<Hero[]>('/assets/data/superheroes.json');
   }
 }
