@@ -98,5 +98,10 @@
     "icon": "albums-outline",
     "name": "slides",
     "redirectTo": "/slides"
+  },
+  {
+    "icon": "cog-outline",
+    "name": "tabs",
+    "redirectTo": "/tabs"
   }
 ]
