@@ -83,5 +83,10 @@
     "icon": "arrow-down-circle-outline",
     "name": "Refresher",
     "redirectTo": "/refresher"
+  },
+  {
+    "icon": "search-outline",
+    "name": "searchbar",
+    "redirectTo": "/searchbar"
   }
 ]
