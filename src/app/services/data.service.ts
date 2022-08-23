@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Route } from '../models/route';
 import { Album } from '../models/Album';
 import { Hero } from '../models/hero';
+import { delay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -27,6 +28,8 @@ export class DataService {
   }
 
   getHeroes(): Observable<Hero[]> {
-    return this.http.get<Hero[]>('/assets/data/superheroes.json');
+    return this.http
+      .get<Hero[]>('/assets/data/superheroes.json')
+      .pipe(delay(1500));
   }
 }
